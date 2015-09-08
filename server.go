@@ -10,6 +10,8 @@ import (
 
 func main() {
 	controllers.Asset = Asset
+	controllers.GitHubClient = initGitHubClient()
+
 	top := controllers.TopController{}
 	ranking := controllers.RankingController{}
 

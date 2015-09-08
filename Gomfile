@@ -2,6 +2,7 @@ gom 'github.com/google/go-github/github'
 gom 'github.com/hico-horiuchi/go-github-streak'
 gom 'github.com/yosssi/ace'
 gom 'github.com/zenazn/goji'
+gom 'golang.org/x/oauth2'
 
 group :development do
   gom 'github.com/elazarl/go-bindata-assetfs/go-bindata-assetfs'

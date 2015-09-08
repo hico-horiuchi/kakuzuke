@@ -11,6 +11,8 @@ import (
 	"github.com/zenazn/goji/web"
 )
 
+var GitHubClient *github.Client
+
 type RankingController struct {
 	controller
 }
@@ -21,14 +23,13 @@ func (ranking RankingController) Show(c web.C, w http.ResponseWriter, r *http.Re
 		mutex sync.Mutex
 	)
 
-	client := github.NewClient(nil)
-	me, _, err := client.Users.Get(c.URLParams["username"])
+	me, _, err := GitHubClient.Users.Get(c.URLParams["username"])
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	followees, _, err := client.Users.ListFollowing(c.URLParams["username"], nil)
+	followees, _, err := GitHubClient.Users.ListFollowing(c.URLParams["username"], nil)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
