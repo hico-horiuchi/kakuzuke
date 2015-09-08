@@ -1,5 +1,7 @@
 ## kakuzuke
 
+![screen.png](https://raw.githubusercontent.com/hico-horiuchi/kakuzuke/master/screen.png)
+
 #### Requirements
 
   - [Golang](https://golang.org/) : 1.5
@@ -13,6 +15,7 @@
     $ cd kakuzuke
     $ make gom link
     $ make build
+    $ export GITHUB_ACCESS_TOKEN=your_access_token
     $ bin/kakuzuke
 
 #### License
