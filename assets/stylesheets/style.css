@@ -1,0 +1,77 @@
+.text-white,    a.text-white:hover    { color: #fff;    }
+.text-kakuzuke, a.text-kakuzuke:hover { color: #c24242; }
+
+.bg-white    { background: #fff;    }
+.bg-kakuzuke { background: #c24242; }
+.bg-kakuzuke * { color: #fff !important; }
+
+.m-a-sm { margin:        .5rem !important; }
+.m-t-sm { margin-top:    .5rem !important; }
+.m-r-sm { margin-right:  .5rem !important; }
+.m-b-sm { margin-bottom: .5rem !important; }
+.m-l-sm { margin-left:   .5rem !important; }
+.m-x-sm { margin-right:  .5rem !important; margin-left:   .5rem !important; }
+.m-y-sm { margin-top:    .5rem !important; margin-bottom: .5rem !important; }
+
+.p-a-sm { padding:        .5rem !important; }
+.p-t-sm { padding-top:    .5rem !important; }
+.p-r-sm { padding-right:  .5rem !important; }
+.p-b-sm { padding-bottom: .5rem !important; }
+.p-l-sm { padding-left:   .5rem !important; }
+.p-x-sm { padding-right:  .5rem !important; padding-left:   .5rem !important; }
+.p-y-sm { padding-top:    .5rem !important; padding-bottom: .5rem !important; }
+
+@media (min-width: 62em) {
+  .container {
+    max-width: 45rem;
+  }
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ubuntu-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ubuntu-bold.ttf') format('truetype');
+}
+
+body {
+  font-family: Ubuntu;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+input[type='text']
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font-family: Ubuntu;
+  font-weight: 400;
+}
+
+a.link-muted,
+a.link-muted:hover {
+  color: #818a91;
+  text-decoration: none;
+}
+
+a.link-kakuzuke,
+a.link-kakuzuke:hover {
+  color: #c24242;
+  text-decoration: underline;
+}
+
+.inline-block {
+  display: inline-block;
+}

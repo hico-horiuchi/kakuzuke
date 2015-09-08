@@ -1,0 +1,35 @@
+= doctype html
+html lang="en"
+  head
+    title kakuzuke
+
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+
+    link href="/assets/images/favicon.ico" rel="shortcut icon"
+    link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet"
+    link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet"
+    link href="/assets/stylesheets/style.css" rel="stylesheet"
+
+  body
+    nav.navbar.navbar-fixed-top.bg-white
+      .container
+        a#app-title.navbar-brand.text-kakuzuke href="/"
+          i.fa.fa-trophy.m-r-sm
+          span.bold kakuzuke
+
+    .container.m-y-md
+      = yield main
+
+    footer.small.m-y-md.text-muted
+      .container
+        i.fa.fa-copyright.m-r-sm
+        a.link-muted href="https://github.com/hico-horiuchi" target="_blank" Akihiko Horiuchi
+
+    script src="/assets/javascripts/mithril.min.js" type="text/javascript"
+    script src="/app/controllers/top_controller.js" type="text/javascript"
+    script src="/app/controllers/ranking_controller.js" type="text/javascript"
+    script src="/app/views/top.js" type="text/javascript"
+    script src="/app/views/ranking.js" type="text/javascript"
+    script src="/app/app.js" type="text/javascript"
