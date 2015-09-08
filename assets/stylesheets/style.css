@@ -72,6 +72,14 @@ a.link-kakuzuke:hover {
   text-decoration: underline;
 }
 
+.card {
+  position: relative;
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
 .inline-block {
   display: inline-block;
+  vertical-align: middle;
 }

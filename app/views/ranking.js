@@ -9,7 +9,7 @@ var ranking = ranking || {};
         class: user.me ? 'bg-kakuzuke' : ''
       }, [
         m('.card-block.p-a-sm.inline-block', [
-          m('.p-a-sm.inline-block.pull-left', [
+          m('.p-a-sm.inline-block', [
             m('img.img-circle[width=60px][height=60px]', {
               src: user.avatar_url,
               alt: user.login
@@ -20,7 +20,7 @@ var ranking = ranking || {};
               href: '/ranking/' + user.login,
               config: m.route
             }, user.login),
-            m('h6.m-b-0', [
+            m('h6', [
               m('span.text-muted.m-r-sm', 'Current streak'),
               user.current_streak + ' days'
             ])
@@ -31,7 +31,7 @@ var ranking = ranking || {};
   };
 
   ranking.loading = function() {
-    return m('.p-a-lg.text-center.text-kakuzuke', [
+    return m('.p-y-lg.text-center.text-kakuzuke', [
       m('i.fa.fa-refresh.fa-spin.fa-5x')
     ]);
   }
