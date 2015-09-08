@@ -16,10 +16,13 @@ var ranking = ranking || {};
             })
           ]),
           m('.p-a-sm.inline-block', [
-            m('a.h4.card-title.link-kakuzuke.bold.m-y-sm.inline-block', {
+            m('a.h4.card-title.link-kakuzuke.bold.m-y-sm.m-r-sm.inline-block', {
               href: '/ranking/' + user.login,
               config: m.route
             }, user.login),
+            m('a.link-muted[target=_blank]', {
+              href: 'https://github.com/' + user.login
+            }, m('i.fa.fa-github-alt')),
             m('h6', [
               m('span.text-muted.m-r-sm', 'Current streak'),
               user.current_streak + ' days'
