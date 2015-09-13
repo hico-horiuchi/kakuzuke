@@ -29,9 +29,10 @@ var ranking = ranking || {};
   }
 
   ranking.show = function() {
-    return ranking.list().map(function(user) {
-      return m('.card', {
-        class: user.me ? 'bg-kakuzuke' : ''
+    return ranking.list().map(function(user, rank) {
+      return m('.card.animated.fadeInUp', {
+        class: user.me ? 'bg-kakuzuke' : '',
+        style: animationDelay(rank)
       }, [
         m('.card-block.p-a-sm.inline-block', [
           m('.p-a-sm.inline-block', [

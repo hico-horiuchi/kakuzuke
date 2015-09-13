@@ -10,6 +10,7 @@ html lang="en"
     link href="/assets/images/favicon.ico" rel="shortcut icon"
     link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet"
     link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet"
+    link href="/assets/stylesheets/animate.min.css" rel="stylesheet"
     link href="/assets/stylesheets/style.css" rel="stylesheet"
 
   body

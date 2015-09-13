@@ -6,10 +6,12 @@ var top = top || {};
 
     return [
       m('.row'),
-      m('.col-md-6.text-center.text-kakuzuke.p-y-lg', [
-        m('i.fa.fa-github.fa-4x.m-r-md'),
-        m('i.fa.fa-plus.fa-3x.m-r-md'),
-        m('i.fa.fa-list-ol.fa-4x')
+      m('.col-md-6', [
+        m('.jumbotron.text-center.text-kakuzuke.p-y-lg', [
+          m('i.fa.fa-github.fa-4x.m-r-md.animated.infinite.bounceLeft'),
+          m('i.fa.fa-plus.fa-3x.m-r-md'),
+          m('i.fa.fa-list-ol.fa-4x.animated.infinite.bounceRight')
+        ])
       ]),
       m('.col-md-6', [
         m('h4', [
