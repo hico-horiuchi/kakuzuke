@@ -1,6 +1,8 @@
 var ranking = ranking || {};
 
 (function() {
+  'use strict';
+
   ranking.view = function(ctrl) {
     document.title = ctrl.username() + ' | kakuzuke';
 

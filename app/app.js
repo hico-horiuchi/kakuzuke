@@ -18,6 +18,8 @@ var animationDelay = function(time) {
 };
 
 (function(window) {
+  'use strict';
+
   m.route(document.getElementById('app-body'), '/', {
     '/ranking/:username': ranking,
     '/': top

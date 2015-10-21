@@ -1,6 +1,8 @@
 var ranking = ranking || {};
 
 (function() {
+  'use strict';
+
   ranking.list = m.prop([]);
   ranking.loaded = m.prop(false);
   ranking.status = m.prop('');

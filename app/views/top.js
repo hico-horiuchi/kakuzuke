@@ -1,6 +1,8 @@
 var top = top || {};
 
 (function() {
+  'use strict';
+
   top.view = function(ctrl) {
     document.title = 'kakuzuke';
 
