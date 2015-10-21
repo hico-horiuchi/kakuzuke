@@ -25,13 +25,13 @@ func (ranking RankingController) Show(c web.C, w http.ResponseWriter, r *http.Re
 
 	me, _, err := GitHubClient.Users.Get(c.URLParams["username"])
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
 		return
 	}
 
 	followees, _, err := GitHubClient.Users.ListFollowing(c.URLParams["username"], nil)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 	followees = append(followees, *me)

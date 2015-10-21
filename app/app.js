@@ -2,7 +2,7 @@ var top = top || {};
 var ranking = ranking || {};
 
 var extractStatus = function(xhr, xhrOptions) {
-  return xhr.status !== 200 ? String(xhr.status) : xhr.responseText;
+  return xhr.status !== 200 ? xhr.status : xhr.responseText;
 };
 
 var animationDelay = function(time) {

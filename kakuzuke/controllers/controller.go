@@ -16,13 +16,13 @@ func (c controller) Render(w http.ResponseWriter, view string) {
 
 	tpl, err := ace.Load("kakuzuke/views/layout", view, options)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 
 	err = tpl.Execute(w, nil)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return
 	}
 }

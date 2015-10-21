@@ -5,7 +5,7 @@ var ranking = ranking || {};
 
   ranking.list = m.prop([]);
   ranking.loaded = m.prop(false);
-  ranking.status = m.prop('');
+  ranking.status = m.prop(200);
 
   ranking.controller = function() {
     this.username = m.prop(m.route.param('username') || '');
@@ -28,6 +28,6 @@ var ranking = ranking || {};
 
     ranking.list([]);
     ranking.loaded(false);
-    ranking.status('');
+    ranking.status(200);
   };
 })();

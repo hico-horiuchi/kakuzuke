@@ -1,3 +1,4 @@
+var components = components || {};
 var ranking = ranking || {};
 
 (function() {
@@ -7,28 +8,15 @@ var ranking = ranking || {};
     document.title = ctrl.username() + ' | kakuzuke';
 
     if (!ranking.loaded()) {
-      return ranking.loading();
+      return components.loading();
     }
 
-    if (ranking.status() !== '') {
-      return ranking.error();
+    if (ranking.status() !== 200) {
+      return components.error(ranking.status());
     }
 
     return ranking.show();
   };
-
-  ranking.loading = function() {
-    return m('.p-y-lg.text-center.text-kakuzuke', [
-      m('i.fa.fa-refresh.fa-spin.fa-5x')
-    ]);
-  }
-
-  ranking.error = function() {
-    return m('.p-y-lg.text-center.text-muted', [
-      m('i.fa.fa-bug.fa-5x.m-b-sm'),
-      m('h4', ranking.status())
-    ]);
-  }
 
   ranking.show = function() {
     return ranking.list().map(function(user, rank) {
