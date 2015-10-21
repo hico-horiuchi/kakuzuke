@@ -28,5 +28,5 @@ var animationDelay = function(time) {
   document.getElementById('app-title').onclick = function(e) {
     e.preventDefault();
     m.route('/');
-  }
+  };
 })(window);

@@ -13,7 +13,7 @@ var components = components || {};
     var statusIcons = {
       404: 'user-times',
       500: 'bug'
-    }
+    };
 
     return m('.p-y-lg.text-center.text-muted', [
       m('i.fa.fa-5x.m-b-sm', {
