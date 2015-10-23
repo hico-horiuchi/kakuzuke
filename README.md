@@ -1,6 +1,6 @@
 ## kakuzuke
 
-![screen.png](https://raw.githubusercontent.com/hico-horiuchi/kakuzuke/master/screen.png)
+![screen.gif](https://raw.githubusercontent.com/hico-horiuchi/kakuzuke/master/screen.gif)
 
 #### Requirements
 
