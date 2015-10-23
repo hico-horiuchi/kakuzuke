@@ -11,7 +11,7 @@ var components = components || {};
 
   components.error = function(status) {
     var statusIcons = {
-      404: 'user-times',
+      404: 'trash',
       500: 'bug'
     };
 
