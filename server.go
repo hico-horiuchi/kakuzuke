@@ -17,7 +17,6 @@ func main() {
 
 	goji.Get("/assets/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "/"}))
 	goji.Get("/app/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "/"}))
-
 	goji.Get("/api/ranking/:username", ranking.Show)
 	goji.Get("/", top.Index)
 
