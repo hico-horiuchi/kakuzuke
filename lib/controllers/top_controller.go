@@ -11,5 +11,5 @@ type TopController struct {
 }
 
 func (top TopController) Index(c web.C, w http.ResponseWriter, r *http.Request) {
-	top.Render(w, "kakuzuke/views/top/index")
+	top.Render(w, "lib/views/top/index")
 }

@@ -8,13 +8,13 @@ run:
 	gom run main.go ${ARGS}
 
 fmt:
-	gom exec goimports -w *.go kakuzuke/*/*.go
+	gom exec goimports -w *.go lib/*/*.go
 
 bindata:
-	gom exec go-bindata-assetfs ./app/... ./assets/... ./kakuzuke/views/...
+	gom exec go-bindata-assetfs ./app/... ./assets/... ./lib/views/...
 
 debugdata:
-	gom exec go-bindata-assetfs -debug=true ./app/... ./assets/... ./kakuzuke/views/...
+	gom exec go-bindata-assetfs -debug=true ./app/... ./assets/... ./lib/views/...
 
 build: fmt bindata
 	gom build $(GO_BUILDOPT) -o bin/kakuzuke *.go

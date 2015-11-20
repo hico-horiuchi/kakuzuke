@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	assetfs "github.com/elazarl/go-bindata-assetfs"
-	"github.com/hico-horiuchi/kakuzuke/kakuzuke/controllers"
+	"github.com/hico-horiuchi/kakuzuke/lib/controllers"
 	"github.com/zenazn/goji"
 )
 

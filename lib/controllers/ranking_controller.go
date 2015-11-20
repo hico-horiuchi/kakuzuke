@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/go-github/github"
 	streak "github.com/hico-horiuchi/go-github-streak"
-	"github.com/hico-horiuchi/kakuzuke/kakuzuke/models"
+	"github.com/hico-horiuchi/kakuzuke/lib/models"
 	"github.com/zenazn/goji/web"
 )
 
