@@ -1,5 +1,5 @@
-var top = top || {};
 var ranking = ranking || {};
+var top = top || {};
 
 var extractStatus = function(xhr, xhrOptions) {
   return xhr.status !== 200 ? xhr.status : xhr.responseText;
