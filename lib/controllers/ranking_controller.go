@@ -17,7 +17,7 @@ type RankingController struct {
 	controller
 }
 
-func (ranking RankingController) Show(c web.C, w http.ResponseWriter, r *http.Request) {
+func (ranking RankingController) ShowAPI(c web.C, w http.ResponseWriter, r *http.Request) {
 	var (
 		group sync.WaitGroup
 		mutex sync.Mutex
@@ -69,5 +69,5 @@ func (ranking RankingController) Show(c web.C, w http.ResponseWriter, r *http.Re
 	if len(list) > 10 {
 		list = list[:10]
 	}
-	ranking.API(w, list)
+	ranking.JSON(w, list)
 }

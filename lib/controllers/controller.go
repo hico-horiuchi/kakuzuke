@@ -27,7 +27,7 @@ func (c controller) Render(w http.ResponseWriter, view string) {
 	}
 }
 
-func (c controller) API(w http.ResponseWriter, data interface{}) {
+func (c controller) JSON(w http.ResponseWriter, data interface{}) {
 	w.Header().Set("Content-Type", "application/json")
 	encoder := json.NewEncoder(w)
 	encoder.Encode(data)

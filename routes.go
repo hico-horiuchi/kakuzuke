@@ -15,9 +15,9 @@ func main() {
 	top := controllers.TopController{}
 	ranking := controllers.RankingController{}
 
-	goji.Get("/assets/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "/"}))
-	goji.Get("/app/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "/"}))
-	goji.Get("/api/ranking/:username", ranking.Show)
+	goji.Get("/assets/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, AssetInfo: AssetInfo, Prefix: "/"}))
+	goji.Get("/app/*", http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, AssetInfo: AssetInfo, Prefix: "/"}))
+	goji.Get("/api/ranking/:username", ranking.ShowAPI)
 	goji.Get("/", top.Index)
 
 	goji.Serve()
