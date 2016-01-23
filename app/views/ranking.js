@@ -24,15 +24,15 @@ var ranking = ranking || {};
         class: user.me ? 'bg-kakuzuke' : '',
         style: animationDelay(rank)
       }, [
-        m('.card-block.p-a-sm.inline-block', [
-          m('.p-a-sm.inline-block', [
+        m('.card-block.p-a-05.inline-block', [
+          m('.p-a-05.inline-block', [
             m('img.img-circle[width=60px][height=60px]', {
               src: user.avatar_url,
               alt: user.login
             })
           ]),
-          m('.p-a-sm.inline-block', [
-            m('a.h4.card-title.link-kakuzuke.bold.m-y-sm.m-r-sm.inline-block', {
+          m('.p-a-05.inline-block', [
+            m('a.h4.card-title.link-kakuzuke.bold.m-y-05.m-r-05.inline-block', {
               href: '/ranking/' + user.login,
               config: m.route
             }, user.login),
@@ -42,7 +42,7 @@ var ranking = ranking || {};
               m('i.fa.fa-github-alt')
             ]),
             m('h6', [
-              m('span.text-muted.m-r-sm', 'Current streak'),
+              m('span.text-muted.m-r-05', 'Current streak'),
               user.current_streak + ' days'
             ])
           ])

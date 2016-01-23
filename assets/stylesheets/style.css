@@ -5,21 +5,21 @@
 .bg-kakuzuke { background: #c24242; }
 .bg-kakuzuke * { color: #fff !important; }
 
-.m-a-sm { margin:        .5rem !important; }
-.m-t-sm { margin-top:    .5rem !important; }
-.m-r-sm { margin-right:  .5rem !important; }
-.m-b-sm { margin-bottom: .5rem !important; }
-.m-l-sm { margin-left:   .5rem !important; }
-.m-x-sm { margin-right:  .5rem !important; margin-left:   .5rem !important; }
-.m-y-sm { margin-top:    .5rem !important; margin-bottom: .5rem !important; }
+.m-a-05 { margin:        .5rem !important; }
+.m-t-05 { margin-top:    .5rem !important; }
+.m-r-05 { margin-right:  .5rem !important; }
+.m-b-05 { margin-bottom: .5rem !important; }
+.m-l-05 { margin-left:   .5rem !important; }
+.m-x-05 { margin-right:  .5rem !important; margin-left:   .5rem !important; }
+.m-y-05 { margin-top:    .5rem !important; margin-bottom: .5rem !important; }
 
-.p-a-sm { padding:        .5rem !important; }
-.p-t-sm { padding-top:    .5rem !important; }
-.p-r-sm { padding-right:  .5rem !important; }
-.p-b-sm { padding-bottom: .5rem !important; }
-.p-l-sm { padding-left:   .5rem !important; }
-.p-x-sm { padding-right:  .5rem !important; padding-left:   .5rem !important; }
-.p-y-sm { padding-top:    .5rem !important; padding-bottom: .5rem !important; }
+.p-a-05 { padding:        .5rem !important; }
+.p-t-05 { padding-top:    .5rem !important; }
+.p-r-05 { padding-right:  .5rem !important; }
+.p-b-05 { padding-bottom: .5rem !important; }
+.p-l-05 { padding-left:   .5rem !important; }
+.p-x-05 { padding-right:  .5rem !important; padding-left:   .5rem !important; }
+.p-y-05 { padding-top:    .5rem !important; padding-bottom: .5rem !important; }
 
 @media (min-width: 62em) {
   .container {

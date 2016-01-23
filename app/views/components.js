@@ -4,7 +4,7 @@ var components = components || {};
   'use strict';
 
   components.loading = function() {
-    return m('.p-y-lg.text-center.text-kakuzuke', [
+    return m('.p-y-3.text-xs-center.text-kakuzuke', [
       m('i.fa.fa-refresh.fa-spin.fa-5x')
     ]);
   };
@@ -15,8 +15,8 @@ var components = components || {};
       500: 'bug'
     };
 
-    return m('.p-y-lg.text-center.text-muted', [
-      m('i.fa.fa-5x.m-b-sm', {
+    return m('.p-y-3.text-xs-center.text-muted', [
+      m('i.fa.fa-5x.m-b-05', {
         class: 'fa-' + statusIcons[status]
       }),
       m('h4', status)

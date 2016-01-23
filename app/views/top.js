@@ -9,9 +9,9 @@ var top = top || {};
     return [
       m('.row', [
         m('.col-md-6', [
-          m('.jumbotron.text-center.text-kakuzuke.p-y-lg', [
-            m('i.fa.fa-github.fa-4x.m-r-md.animated.infinite.bounceLeft'),
-            m('i.fa.fa-plus.fa-3x.m-r-md'),
+          m('.jumbotron.text-xs-center.text-kakuzuke.p-y-3', [
+            m('i.fa.fa-github.fa-4x.m-r-2.animated.infinite.bounceLeft'),
+            m('i.fa.fa-plus.fa-3x.m-r-2'),
             m('i.fa.fa-list-ol.fa-4x.animated.infinite.bounceRight')
           ])
         ]),
@@ -23,12 +23,12 @@ var top = top || {};
             m('a.link-kakuzuke[href=https://lhorie.github.io/mithril/][target=_blank]', 'Mithril.js'),
             ' .'
           ]),
-          m('h6.m-t-md', 'Please enter your GitHub username.'),
+          m('h6.m-t-2', 'Please enter your GitHub username.'),
           m('.input-group', [
             m('.input-group-addon', [
               m('i.fa.fa-github-alt')
             ]),
-            m('input#username.form-control.form-control-sm[type=text][placeholder=GitHub username]', {
+            m('input#username.form-control.form-control-05[type=text][placeholder=GitHub username]', {
               onkeypress: function(e) {
                 if (e.keyCode == 13) {
                   m.route('/ranking/' + document.getElementById('username').value);

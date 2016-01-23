@@ -17,15 +17,15 @@ html lang="en"
     nav.navbar.navbar-fixed-top.bg-white
       .container
         a#app-title.navbar-brand.text-kakuzuke href="/"
-          i.fa.fa-trophy.m-r-sm
+          i.fa.fa-trophy.m-r-05
           span.bold kakuzuke
 
-    .container.m-y-md
+    .container.m-y-2
       = yield main
 
-    footer.small.m-y-md.text-muted
+    footer.small.m-y-2.text-muted
       .container
-        i.fa.fa-copyright.m-r-sm
+        i.fa.fa-copyright.m-r-05
         a.link-muted href="https://github.com/hico-horiuchi/kakuzuke" target="_blank" Akihiko Horiuchi
 
     = javascript
