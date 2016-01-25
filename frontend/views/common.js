@@ -1,15 +1,15 @@
-var components = components || {};
+var common = common || {};
 
 (function() {
   'use strict';
 
-  components.loading = function() {
+  common.loading = function() {
     return m('.p-y-3.text-xs-center.text-kakuzuke', [
       m('i.fa.fa-refresh.fa-spin.fa-5x')
     ]);
   };
 
-  components.error = function(status) {
+  common.error = function(status) {
     var statusIcons = {
       404: 'trash',
       500: 'bug'

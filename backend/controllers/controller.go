@@ -14,7 +14,7 @@ type controller struct{}
 func (c controller) Render(w http.ResponseWriter, view string) {
 	options := &ace.Options{Asset: Asset}
 
-	tpl, err := ace.Load("lib/views/layout", view, options)
+	tpl, err := ace.Load("backend/views/layout", view, options)
 	if err != nil {
 		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 		return

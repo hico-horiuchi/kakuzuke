@@ -1,4 +1,4 @@
-var components = components || {};
+var common = common || {};
 var ranking = ranking || {};
 
 (function() {
@@ -8,11 +8,11 @@ var ranking = ranking || {};
     document.title = ctrl.username() + ' | kakuzuke';
 
     if (!ranking.loaded()) {
-      return components.loading();
+      return common.loading();
     }
 
     if (ranking.status() !== 200) {
-      return components.error(ranking.status());
+      return common.error(ranking.status());
     }
 
     return ranking.show();

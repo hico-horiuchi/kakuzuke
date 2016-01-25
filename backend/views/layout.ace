@@ -8,9 +8,9 @@ html lang="en"
     meta http-equiv="x-ua-compatible" content="ie=edge"
 
     link href="/assets/images/favicon.ico" rel="shortcut icon"
+    link href="/assets/stylesheets/animate.min.css" rel="stylesheet"
     link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet"
     link href="/assets/stylesheets/font-awesome.min.css" rel="stylesheet"
-    link href="/assets/stylesheets/animate.min.css" rel="stylesheet"
     link href="/assets/stylesheets/style.css" rel="stylesheet"
 
   body
@@ -37,9 +37,9 @@ html lang="en"
       ga('send', 'pageview');
 
     script src="/assets/javascripts/mithril.min.js" type="text/javascript"
-    script src="/app/controllers/top_controller.js" type="text/javascript"
-    script src="/app/controllers/ranking_controller.js" type="text/javascript"
-    script src="/app/views/components.js" type="text/javascript"
-    script src="/app/views/top.js" type="text/javascript"
-    script src="/app/views/ranking.js" type="text/javascript"
-    script src="/app/app.js" type="text/javascript"
+    script src="/frontend/controllers/ranking_controller.js" type="text/javascript"
+    script src="/frontend/controllers/top_controller.js" type="text/javascript"
+    script src="/frontend/views/common.js" type="text/javascript"
+    script src="/frontend/views/ranking.js" type="text/javascript"
+    script src="/frontend/views/top.js" type="text/javascript"
+    script src="/frontend/app.js" type="text/javascript"
