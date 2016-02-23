@@ -28,7 +28,7 @@ var top = top || {};
             m('.input-group-addon', [
               m('i.fa.fa-github-alt')
             ]),
-            m('input#username.form-control.form-control-05[type=text][placeholder=GitHub username]', {
+            m('input#username.form-control.form-control-sm[type=text][placeholder=GitHub username]', {
               onkeypress: function(e) {
                 if (e.keyCode == 13) {
                   m.route('/ranking/' + document.getElementById('username').value);
