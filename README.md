@@ -1,5 +1,7 @@
 ## kakuzuke
 
+[![Circle CI](https://circleci.com/gh/hico-horiuchi/kakuzuke.svg?style=shield)](https://circleci.com/gh/hico-horiuchi/kakuzuke)
+
 ![screen.gif](https://raw.githubusercontent.com/hico-horiuchi/kakuzuke/master/screen.gif)
 
 #### Requirements

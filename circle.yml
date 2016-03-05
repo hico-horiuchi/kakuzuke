@@ -1,0 +1,18 @@
+---
+machine:
+  timezone:
+    Asia/Tokyo
+dependencies:
+  override:
+    - make gom
+    - mkdir -p /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi
+    - if [ ! -d /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi/kakuzuke ]; then ln -s $(pwd) /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi/kakuzuke; fi
+test:
+  override:
+    - gom test ./...
+deployment:
+  production:
+    branch: master
+    commands:
+      - git remote | grep dokku; if [ ${?} -ne 0 ]; then git remote add dokku dokku@hiconyan.com:kakuzuke; fi
+      - git push dokku master
