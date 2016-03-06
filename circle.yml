@@ -5,11 +5,12 @@ machine:
 dependencies:
   override:
     - make gom
+test:
+  pre:
     - mkdir -p /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi
     - if [ ! -d /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi/kakuzuke ]; then ln -s $(pwd) /home/ubuntu/.go_workspace/src/github.com/hico-horiuchi/kakuzuke; fi
-test:
   override:
-    - gom test ./...
+    - gom test -v -race ./...
 deployment:
   production:
     branch: master
