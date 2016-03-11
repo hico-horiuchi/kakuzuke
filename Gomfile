@@ -1,4 +1,5 @@
 gom 'github.com/google/go-github/github'
+gom 'github.com/goware/httpcoala'
 gom 'github.com/hico-horiuchi/go-github-streak'
 gom 'github.com/yosssi/ace'
 gom 'github.com/zenazn/goji'

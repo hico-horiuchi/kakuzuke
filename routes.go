@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	assetfs "github.com/elazarl/go-bindata-assetfs"
+	"github.com/goware/httpcoala"
 	"github.com/hico-horiuchi/kakuzuke/backend/controllers"
 	"github.com/zenazn/goji"
 )
@@ -20,5 +21,6 @@ func main() {
 	goji.Get("/api/ranking/:username", ranking.ShowAPI)
 	goji.Get("/", top.Index)
 
+	goji.Use(httpcoala.Route("*"))
 	goji.Serve()
 }
