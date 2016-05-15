@@ -4,5 +4,6 @@
 .DS_Store
 /_vendor
 /.vendor
+/vendor
 /bin/kakuzuke
 /tmp
